@@ -1,27 +1,14 @@
-dna = input()
+import sys
 
-rna = dna[::-1]
+# dna input 받고 좌우반전
+dna = open(sys.argv[1]).read().strip()
+dna = dna[::-1]
+rna = []
 
-for i in range(len(rna)):
-    if rna[i] == 'A':
-        rna[i] = 'T'
-    elif rna[i] == 'T':
-        rna[i] = 'A'
-    elif rna[i] == 'C':
-        rna[i] = 'G'
-    elif rna[i] == 'C':
-        rna[i] = 'G'
+# complement 표를 생성 후에 이를 for문으로 적용
+complement = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
 
-print(rna)
+for i in range(len(dna)):
+    rna.append(complement[dna[i]])
 
-
-
-# dna = input()
-
-# # 상보 염기쌍 딕셔너리
-# complement = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
-
-# # 1. 역순으로 뒤집고 2. 각 염기를 상보 염기로 변환
-# rna = "".join([complement[base] for base in dna[::-1]])
-
-# print(rna)
+print(''.join(rna))  

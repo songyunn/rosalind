@@ -6,8 +6,9 @@
 
 ## Bioinformatics Stronghold
 
-| ID | 제목 | 상태 | 핵심 개념 |
+| 제목 | 상태 | 핵심 개념 | 문제 내용 |
 |---|---|---|---|
-| DNA | Counting DNA Nucleotides | ✅ | 문자열 카운팅 |
-| RNA | Transcribing DNA into RNA | ✅ | 문자열 치환 |
-| CONS | Consensus and Profile | ✅ | 행렬 연산 |
+| Counting DNA Nucleotides | ✅ | 문자열 카운팅 | DNA의 A,C,G,T 를 각각 세는 코드 |
+| Transcribing DNA into RNA | ✅ | 문자열 치환 | RNA를 DNA로 바꾸는 코드 |
+| Complementing a Strand of DNA | ✅ | 행렬 연산 | DNA의 상보결합 계산|
+| Rabbits and Recurrence Relations | ✅ | 행렬 연산 | 피보나치 수열 계산 |

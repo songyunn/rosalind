@@ -6,54 +6,34 @@ def computing_GC(strand):
     G = strand.count('G')
     return (C+G)/len(strand)
 
-
-
-
+# 한줄 씩 리스트로 받기
 with open(sys.argv[1]) as f:
     dataset = [line.strip() for line in f.readlines()]
 
+# max 변수 선언
 max_GC = 0
-max_id = ''
+max_lable = ''
 
-dna_dics = {}
-DNA = ''
-label = ''
-
+# dataset list를 for loop으로 돌면서 DNA 시작 부분 찾기
+# DNA 시작 부분 찾은 후에는 GC content 계산 -> max 값 비교 후 대입
 for i in range(len(dataset)):
     if dataset[i][0] == '>':
-        if label != '':
-            dna_dics[label] = computing_GC(DNA)
-        dna_dics[dataset[i]] = 0
-        label = dataset[i]
-        continue
-    DNA.append(dataset[i])
-    
+        DNA = []
+        a = i+1
+        while dataset[a][0] != '>':
+            DNA.append(dataset[a])
+            a += 1
+            # out of range 오류 해결하기
+            if a >= len(dataset):
+                break
 
+        # 구한 GC와 MAX_GC 비교해서 하나만 저장하기
+        compute_GC = computing_GC(''.join(DNA).strip()) 
+        if max_GC < compute_GC:
+            max_GC = compute_GC
+            max_lable = dataset[i]
 
-
-# for i in range(0, len(dataset), 2):
-#     a = computing_GC(dataset[i+1])
-#     if a < max_GC:
-#         continue
-#     else:
-#         max_GC = a
-#         max_id = dataset[i]
-
-print(max_id)
+print(max_lable[1:])
 print(max_GC*100)
-
-
-
-
-
-
-
-# >Rosalind_6404
-# CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCC
-# TCCCACTAATAATTCTGAGG
-# >Rosalind_5959
-# CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGAAGGTCT
-# ATATCCATTTGTCAGCAGACACGC
-# >Rosalind_0808
-# CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGAC
-# TGGGAACCTGCGGGCAGTAGGTGGAAT
+    
+# DNA list를 초기화 시키 않아서 한번 틀림

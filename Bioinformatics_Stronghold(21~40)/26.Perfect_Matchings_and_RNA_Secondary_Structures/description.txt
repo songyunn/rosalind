@@ -1,0 +1,12 @@
+RNA가 base pairs에 따라 folding을 하는데 folding의 가능한 경우의 수를 구하는 문제이다.
+folding을 하기 위해서는 A와 U의 개수가 같고, C와 G의 개수가 같아야 한다.(남은 염기가 있으면 안되기 때문에)
+
+이후 perfect matching 가능한 개수를 구하면 된다.
+perfect mathcing이란 모든 node가 다른 node와 짝지어진 것을 의미한다.
+
+--------------------------
+
+
+solution(timeout) 에서는 일일히 다 구할려고 시도하였는데 총 시간 복잡도가 너무 커서 timeout 이 나왔다.
+
+따라서 이후 수학적으로 계산하는 방법을 활용하였다.

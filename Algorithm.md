@@ -20,7 +20,6 @@
 
 <br>
 
----
 
 ### 📘 DP 문제
 
@@ -32,6 +31,7 @@
 
 <br>
 
+---
 ## 2. Combinatorics & Enumeration (조합/열거)
 
 ### 📘 Combination & Enumeration 문제

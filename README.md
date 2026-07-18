@@ -32,8 +32,15 @@ https://rosalind.info/users/songyun/
 | 22. RNA_Splicing | ★☆☆ | intron, exons | DNA에서 intron 제거후 번역 | 26.07.10 |  |
 | 23. Enumerating k-mers Lexicographically | ★☆☆ | Enumerating | 순열 만든 후 sort | 26.07.10 | permutations |
 | 24. Longest Increasing Subsequence | ★★★ | DP, LIS | 수열에서 최장 증가 부분수열 찾기 | 26.07.12 | LIS, 더 효율화 가능 |
-| 25. Genome Assembly as Shortest Superstring | ★★★ | -- | substring으로 superstring 만들기(게놈 시퀀싱) | 26.07.12 | 더 readable 하게 |
-| 26. Perfect Matchings and RNA Secondary Structures | ★☆☆ | -- | RNA folding의 가짓수 구하기 | 26.07.13 | |
+| 25. Genome Assembly as Shortest Superstring | ★★★ | genome sequencing | substring으로 superstring 만들기(게놈 시퀀싱) | 26.07.12 | 더 readable 하게, 나중에 develop |
+| 26. Perfect Matchings and RNA Secondary Structures | ★☆☆ | perfect matching | RNA folding의 가짓수 구하기 | 26.07.13 | |
+| 27. Partial Permutations | ☆☆☆ | partial permutation | 부분순열 계산하기 | 26.07.13 | |
+| 28. Introduction to Random Strings | ☆☆☆ | random | 특성 GCcontenst에서 특정 motif 나올 확률 구하기 | 26.07.15 | |
+| 29. Enumerating Oriented Gene Orderings | ★☆☆ | itertools(permutation, product) | 부호 있는 순열 전체 열거 | 26.07.17 | |
+| 30. Finding a Spliced Motif | ☆☆☆ | subsequence | subsequence 만들기 | 26.07.17 |  |
+| 31. Transitions and Transversions | ☆☆☆ | transition/transversion ratio | transition/transversion ratio 구하기 | 26.07.18 |  |
+
+
 
 
 

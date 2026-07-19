@@ -39,6 +39,9 @@ https://rosalind.info/users/songyun/
 | 29. Enumerating Oriented Gene Orderings | ★☆☆ | itertools(permutation, product) | 부호 있는 순열 전체 열거 | 26.07.17 | |
 | 30. Finding a Spliced Motif | ☆☆☆ | subsequence | subsequence 만들기 | 26.07.17 |  |
 | 31. Transitions and Transversions | ☆☆☆ | transition/transversion ratio | transition/transversion ratio 구하기 | 26.07.18 |  |
+| 32. Completing a Tree | ☆☆☆ | tree | tree 만들기 위한 최소한의 edges 구하기 | 26.07.18 |  |
+| 33. Catalan Numbers and RNA Secondary Structures | ★☆☆ | Catalan number | RNA의 염기 쌍 조건이 추가된 Catalan number 구하기| 26.07.19 | interval DP |
+
 
 
 

@@ -28,6 +28,8 @@
 | 4. Rabbits and Recurrence Relations | 선형 점화식, O(n) | 가장 단순한 형태. dp[n] = dp[n-1] + dp[n-2]*k |
 | 11. Mortal Fibonacci Rabbits | 상태 있는 DP | 나이별 개체 수를 배열/리스트로 추적 (DP의 시작점) |
 | 14. Finding a Shared Motif | Longest Common Substring | 이후 suffix tree/array 사용하여 최적화 가능 |
+| 33. Catalan Numbers and RNA Secondary Structures | catalan number, interval DP | memory를 추가하여 동일한 연산을 줄일 수 있다. |
+
 
 <br>
 
